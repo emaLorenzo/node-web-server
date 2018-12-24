@@ -43,4 +43,10 @@ app.get('/bad', (req, res) => {
   })
 })
 
+app.get('/pepe', (req, res) => {
+  res.send({
+    name: 'Pepe'
+  })
+})
+
 app.listen(port, () => console.log(`Server running on port ${port}`))
